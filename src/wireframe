@@ -1,0 +1,40 @@
+Header 
+    - Logo left 
+    - Home 
+    - About 
+    - HelpLine 
+    - Terms and Condition 
+    - Contact 
+
+Logo - ( Have to create ) Something secure , Student , Minimilistic 
+
+Home 
+    - Confess field 
+    - Proof upload 
+    - College Name Selector 
+    - Dept Selector 
+    - Field selector ( Teacher , Technical( Librarian , Clerk ) , Non teaching staffs ( Transport , Garderner , Mess , Cleaning ) ) (with logo or icons)
+    - Name ( Opponent )
+    - Submit button 
+
+About 
+    - Raj Mohan youtube Video ( iframe or react-youtube api)
+    - Inspiration 
+    - Explanaition with sliding images
+    - Law 
+
+HelpLine 
+    - Help line numbers ( Click to copy )
+    - POCSO acts 
+    - Local numbers 
+    - Brief explanation (Auto scrolling text marquee) 
+
+Terms and Condition 
+    - Security features 
+    - Who can use these data 
+    - What may happen 
+
+Contact 
+    - My details 
+    - social links 
+    - email 
