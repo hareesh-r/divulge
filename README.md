@@ -1,3 +1,9 @@
+# Divulge
+
+## A project to let the students confess securly without hesitation and with anonymity 
+
+ [Visit Here!](https://divulge-tn.web.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
