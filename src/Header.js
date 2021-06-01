@@ -1,8 +1,11 @@
 import "./Header.css";
 import React from 'react';
-import "./img/logo.png";
-import {BrowserRouter as Router ,Route, Link, Switch} from "react-router-dom";
+import logo from "./img/logo-white.png";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+
+var expand = true;
 
 const expandHam = () => {
     var options = document.getElementsByClassName("header__right__option");
@@ -11,27 +14,46 @@ const expandHam = () => {
     options[2].classList.add("header__right__hidden");
     options[3].classList.add("header__right__hidden");
     options[4].classList.add("header__right__hidden");
-
+    var temp = document.getElementsByClassName("menuIcon");
+    temp[0].classList.add("hide");
+    var temp = document.getElementsByClassName("closeIcon");
+    temp[0].classList.remove("hide");
+}
+const compressHam = () => {
+    var options = document.getElementsByClassName("header__right__option");
+    options[0].classList.remove("header__right__hidden");
+    options[1].classList.remove("header__right__hidden");
+    options[2].classList.remove("header__right__hidden");
+    options[3].classList.remove("header__right__hidden");
+    options[4].classList.remove("header__right__hidden");
+    var temp = document.getElementsByClassName("menuIcon");
+    temp[0].classList.remove("hide");
+    var temp = document.getElementsByClassName("closeIcon");
+    temp[0].classList.add("hide");
 }
 
 function Header() {
+    
     return (
         <div className="header">
+            <hr />
             <div className="header__container">
                 <div className="header__logo">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/divulge-1e35f.appspot.com/o/logo.png?alt=media&token=b95419af-80bc-46df-b631-3e9a6f312300" alt="" />
+                    <img src={logo} alt="Divulge Logo Here" />
+                    <h1 className="title">DIVULGE</h1>
                 </div>
                 <Router>
-                <div className="header__right__ham">
-                        <button onClick={expandHam}><MenuIcon /></button>
-                </div>
-                <div className="header__right">
-                    <Link to="/home"><div className="header__right__option">Home</div></Link>
-                    <Link to="/about"><div className="header__right__option">About</div></Link>
-                    <Link to="/helpline"><div className="header__right__option">HelpLine</div></Link>
-                    <Link to="/termsandcondition"><div className="header__right__option">Terms and Condition</div></Link>
-                    <Link to="/contact"><div className="header__right__option">Contact</div></Link>
-                </div>
+                    <div className="header__right">
+                        <Link to="/home"><div className="header__right__option">Home</div></Link>
+                        <Link to="/about"><div className="header__right__option">About</div></Link>
+                        <Link to="/helpline"><div className="header__right__option">HelpLine</div></Link>
+                        <Link to="/termsandcondition"><div className="header__right__option">Terms and Condition</div></Link>
+                        <Link to="/contact"><div className="header__right__option">Contact</div></Link>
+                    </div>
+                    <div className="header__right__ham">
+                    <button className="menuIcon" onClick={expandHam}><MenuIcon /></button>
+                    <button className="closeIcon hide" onClick={compressHam}><CloseIcon /></button> 
+                    </div>
                 </Router>
             </div>
         </div>
