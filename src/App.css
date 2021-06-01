@@ -1,0 +1,16 @@
+::selection {
+    color: rgb(0, 153, 255);
+    background: #1b1b1b;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 153, 255);
+}

@@ -33,7 +33,7 @@ const compressHam = () => {
 }
 
 function Header() {
-    
+
     return (
         <div className="header">
             <hr />
@@ -51,8 +51,8 @@ function Header() {
                         <Link to="/contact"><div className="header__right__option">Contact</div></Link>
                     </div>
                     <div className="header__right__ham">
-                    <button className="menuIcon" onClick={expandHam}><MenuIcon /></button>
-                    <button className="closeIcon hide" onClick={compressHam}><CloseIcon /></button> 
+                        <button className="menuIcon" onClick={expandHam}><MenuIcon /></button>
+                        <button className="closeIcon hide" onClick={compressHam}><CloseIcon /></button>
                     </div>
                 </Router>
             </div>

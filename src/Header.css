@@ -38,12 +38,14 @@
 .header__right__ham {
     display: none;
 }
+
 .header__logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
 .header__logo img {
     margin: 4px 0px 10px 0px;
     height: 41px;
@@ -61,17 +63,21 @@
     padding: 16.5px 0;
     background-color: rgb(0, 153, 255);
 }
-.header__right__ham button{
+
+.header__right__ham button {
     background-color: rgb(50, 50, 50);
     color: rgb(0, 153, 255);
     border-radius: 4px;
-background: #323232;
-box-shadow: inset 5px -5px 10px #282828,
-            inset -5px 5px 10px #3c3c3c;
-}.title{
+    background: #323232;
+    box-shadow: inset 5px -5px 10px #282828,
+        inset -5px 5px 10px #3c3c3c;
+}
+
+.title {
     color: #fff;
     margin: 0px;
 }
+
 /* 450px */
 @media only screen and (max-width: 650px) {
     .header__container {
@@ -121,16 +127,24 @@ box-shadow: inset 5px -5px 10px #282828,
     .header__right a {
         text-decoration: none;
         padding-top: 10px;
-    }.menuIcon{
+    }
+
+    .menuIcon {
         margin-top: -60px;
-    }.title{
+    }
+
+    .title {
         display: none;
-    }.header__logo {
+    }
+
+    .header__logo {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-    }.header__logo img {
+    }
+
+    .header__logo img {
         margin: 20px 0px 0px 0px;
         height: 41px;
         width: 41px;
