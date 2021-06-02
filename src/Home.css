@@ -1,0 +1,32 @@
+.home__hero img {
+    object-fit: contain;
+    height: 100vh;
+}
+
+.hero__title {
+    display: none;
+}
+.home {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 650px) {
+    .home__hero img {
+        object-fit: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .home__hero {
+        position: relative;
+        text-align: center;
+        color: white;
+    }.hero__title{
+        display: block;
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        font-size: 50px;
+    }
+}

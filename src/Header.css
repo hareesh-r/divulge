@@ -111,6 +111,7 @@
         align-items: center;
         flex-direction: row;
         margin: 10px;
+        margin-bottom: 0px;
     }
 
     .header__right__option {

@@ -1,11 +1,9 @@
 import "./Header.css";
 import React from 'react';
 import logo from "./img/logo-white.png";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-
-var expand = true;
 
 const expandHam = () => {
     var options = document.getElementsByClassName("header__right__option");
@@ -16,8 +14,8 @@ const expandHam = () => {
     options[4].classList.add("header__right__hidden");
     var temp = document.getElementsByClassName("menuIcon");
     temp[0].classList.add("hide");
-    var temp = document.getElementsByClassName("closeIcon");
-    temp[0].classList.remove("hide");
+    var temp1 = document.getElementsByClassName("closeIcon");
+    temp1[0].classList.remove("hide");
 }
 const compressHam = () => {
     var options = document.getElementsByClassName("header__right__option");
@@ -26,10 +24,10 @@ const compressHam = () => {
     options[2].classList.remove("header__right__hidden");
     options[3].classList.remove("header__right__hidden");
     options[4].classList.remove("header__right__hidden");
-    var temp = document.getElementsByClassName("menuIcon");
-    temp[0].classList.remove("hide");
-    var temp = document.getElementsByClassName("closeIcon");
-    temp[0].classList.add("hide");
+    var temp2 = document.getElementsByClassName("menuIcon");
+    temp2[0].classList.remove("hide");
+    var temp3 = document.getElementsByClassName("closeIcon");
+    temp3[0].classList.add("hide");
 }
 
 function Header() {
